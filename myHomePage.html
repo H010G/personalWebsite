@@ -7,10 +7,8 @@
             <a href="myExperiencePage.html">EXPERIENCE</a>&nbsp;
             <a href="myPortfolioPage.html">PORTFOLIO</a>&nbsp;
         </div>
-    
-        <hero-image src="">
-            
-        </hero-image>
+        <! MY HERO IMG >
+        <hero-image src="https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></hero-image>
     </head>
     <body>
         <! STYLE >
@@ -18,7 +16,14 @@
            .hero-image {
                 background-position: center;
                 text-align: center;
-                viewpoint: 100%;    
+                viewpoint: 100%;
+                position: absolute;
+                z-index: -1;
+                
+            }
+            topnav {
+                position: absolute;
+                z-index: 1;
             }
             body {
                 background-color:#cdcdcd
@@ -27,7 +32,10 @@
                 color: black
             }
             h2 {
-               color: black
+                color: black
+            }
+            h6 {
+                color: black
             }
             p {
                color: #5a5a5a
@@ -38,6 +46,10 @@
               appearance: button;
               text-align: left;
             }
+            mySocials {
+                z-index: 1;
+                text-align:right;
+            }                
        </style>
 
         <! NAME & TITLE >
@@ -45,12 +57,16 @@
         <p><em>Machinist. Mechanic. PC Technician.</em></p>
 
         <! SOCIALS >
-        <div style = text-align:right;>
+        <div class ="mySocials">
             <a href="https://instagram.com/h.5005.h?igshid=MzRlODBiNWFlZA==" img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Fsearch%3Fq%3DINSTAGRAM&psig=AOvVaw3_ITAb-9UAD2b2kZOQJ7HS&ust=1685110301752000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJCOnpvTkP8CFQAAAAAdAAAAABAE" width = 50px; height = 50px;></a><br>
             <a href="https://www.linkedin.com/in/hugo-goncalves-22427a240/" img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Fpng%2F18930587-linkedin-logo-png-linkedin-icon-transparent-png&psig=AOvVaw0iTBgrsiwiIvOLHxKn7D4K&ust=1685109890706000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCOCulNrRkP8CFQAAAAAdAAAAABAE" width =50 px; height = 50px;></a>
         </div>
         <! ABOUT BUTTON >
-        
-        <a href="myAboutPage.html" class = "button">More...</a>
+        <h6>About Me.</h6>
+        <p>I am an immigrant from Lisbon, Portugal who came to America in the early 2000's. My mother worked very hard in minimum wage jobs and eventually became a CNA to put me through private school.
+           I then started working Landscaping at 15 and soon after I got into cars and trying to express myself through repairing and modifying cars.
+           To this day I work closely with cars on my free time...
+        </p><br>
+        <a href="myAboutPage.html" class = "button">More</a>
     </body>
 </html>
